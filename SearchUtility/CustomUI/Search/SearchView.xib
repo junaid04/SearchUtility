@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="23094" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23084"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="SearchView" customModule="SearchUtility" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="502" height="193"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="yBm-xb-bSJ">
+                    <rect key="frame" x="0.0" y="59" width="502" height="100"/>
+                    <textInputTraits key="textInputTraits"/>
+                </searchBar>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="yBm-xb-bSJ" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="MMG-Pc-JA4"/>
+                <constraint firstItem="yBm-xb-bSJ" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="S17-oL-SaU"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="yBm-xb-bSJ" secondAttribute="bottom" id="b59-yn-DiG"/>
+                <constraint firstItem="yBm-xb-bSJ" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="ypN-Ud-t7b"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="searchBar" destination="yBm-xb-bSJ" id="LzS-1X-xdH"/>
+            </connections>
+            <point key="canvasLocation" x="175.57251908396947" y="-184.1549295774648"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
